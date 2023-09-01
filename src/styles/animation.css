@@ -1,0 +1,200 @@
+﻿:root {
+  --slideX: 0px;
+  --slideY: 0px;
+}
+.hover-opacity:hover {
+  opacity: 0.7;
+}
+.hover-sidenav:hover {
+  background-color: #dfdfdf;
+}
+a.underline-hover {
+  position: relative;
+  padding: 0px 0px;
+}
+
+a.underline-hover::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #ff9a4d;
+  width: 0%;
+  bottom: 0px;
+  left: 0px;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.transition-all {
+  -moz-transition: all;
+  -o-transition: all;
+  -webkit-transition: all;
+  transition: all;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.transition-100ms {
+  -moz-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  -webkit-transition-duration: 100ms;
+  transition-duration: 100ms;
+}
+.transition-200ms {
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+.transition-500ms {
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+.transition-1000ms {
+  -moz-transition-duration: 1000ms;
+  -o-transition-duration: 1000ms;
+  -webkit-transition-duration: 1000ms;
+  transition-duration: 1000ms;
+}
+.transition-1500ms {
+  -moz-transition-duration: 1500ms;
+  -o-transition-duration: 1500ms;
+  -webkit-transition-duration: 1500ms;
+  transition-duration: 1500ms;
+}
+.transition-2000ms {
+  -moz-transition-duration: 2000ms;
+  -o-transition-duration: 2000ms;
+  -webkit-transition-duration: 2000ms;
+  transition-duration: 2000ms;
+}
+.transition-ease {
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.transition-ease-in {
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.transition-ease-in-out {
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.transition-ease-out {
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.transition-delay-500ms {
+  -moz-transition-delay: 500ms;
+  -o-transition-delay: 500ms;
+  -webkit-transition-delay: 500ms;
+  transition-delay: 500ms;
+}
+.transition-delay-1000ms {
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+.transition-delay-1500ms {
+  -moz-transition-delay: 1500ms;
+  -o-transition-delay: 1500ms;
+  -webkit-transition-delay: 1500ms;
+  transition-delay: 1500ms;
+}
+.transition-delay-2000ms {
+  -moz-transition-duration: 2000ms;
+  -o-transition-duration: 2000ms;
+  -webkit-transition-duration: 2000ms;
+  transition-duration: 2000ms;
+}
+.slide {
+  position: relative;
+  -moz-transform: translate(var(--slideX), var(--slideY));
+  -ms-transform: translate(var(--slideX), var(--slideY));
+  -o-transform: translate(var(--slideX), var(--slideY));
+  -webkit-transform: translate(var(--slideX), var(--slideY));
+  transform: translate(var(--slideX), var(--slideY));
+  opacity: 0;
+}
+
+.slide.slide-right {
+  --slideX: -400px;
+}
+.slide.slide-right.show {
+  --slideX: 0px;
+  opacity: 1;
+}
+.transition-500ms {
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.transition-1000ms {
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.transition-1500ms {
+  -moz-transition: all 1500ms ease;
+  -o-transition: all 1500ms ease;
+  -webkit-transition: all 1500ms ease;
+  transition: all 1500ms ease;
+}
+
+.transition-2000ms {
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.transition-2500ms {
+  -moz-transition: all 2500ms ease;
+  -o-transition: all 2500ms ease;
+  -webkit-transition: all 2500ms ease;
+  transition: all 2500ms ease;
+}
+
+.transition-3000ms {
+  -moz-transition: all 3000ms ease;
+  -o-transition: all 3000ms ease;
+  -webkit-transition: all 3000ms ease;
+  transition: all 3000ms ease;
+}
+
+/* a.active::after {
+  width: 88%;
+}
+
+a.underline-hover:hover:after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  a.underline-hover::after {
+    left: 0px;
+  }
+
+  a.active::after {
+    width: 100%;
+  }
+
+  a.underline-hover:hover:after {
+    padding: 0px 0px;
+    width: 100%;
+  }
+} */

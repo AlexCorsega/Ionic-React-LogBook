@@ -1,0 +1,25 @@
+/* ion-input {
+  --padding-start: 20px;
+  --padding-top: 20px;
+  --padding-bottom: 10px;
+  --padding-end: 10;
+  font-size: 50px;
+} */
+/* ion-input.nolines {
+  --border-width: 0; 
+  --border-color: transparent;
+  --border-radius: 0; 
+  box-shadow: none;
+}
+ion-input.ion-invalid {
+  --border-width: 1px; 
+  --border-color: red; 
+  --border-radius: 0; 
+  box-shadow: none;
+} */
+.full-modal {
+  --min-width: 100%;
+  --width: 100%;
+  --min-height: 100%;
+  --height: 100%;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Log Book",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite",
+  "id": "547fb7a4"
+}
